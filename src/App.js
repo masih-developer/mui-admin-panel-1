@@ -34,7 +34,11 @@ const App = () => {
                     <SideBar isOpen={navbarIsOpen} onCheck={closeSidBareHandler} />
                     <Box
                         component="main"
-                        sx={{ flexGrow: 1, width: `calc(100% - ${SideBarWidth}px)`, mt: "10px" }}
+                        sx={{
+                            flexGrow: 1,
+                            width: `calc(100% - ${SideBarWidth}px)`,
+                            mt: "10px",
+                        }}
                     >
                         <Toolbar />
                         <Container>{router}</Container>

@@ -1,4 +1,4 @@
-const HomeChData = [
+const homeChData = [
     {
         name: "Jan",
         uv: 4000,
@@ -49,4 +49,31 @@ const HomeChData = [
     },
 ];
 
-export { HomeChData };
+const productChData = [
+    {
+        name: "Mar",
+        uv: 2000,
+    },
+    {
+        name: "Apr",
+        uv: 1500,
+    },
+    {
+        name: "May",
+        uv: 3200,
+    },
+    {
+        name: "Jun",
+        uv: 2800,
+    },
+    {
+        name: "Jul",
+        uv: 3490,
+    },
+    {
+        name: "Aug",
+        uv: 1860,
+    },
+];
+
+export { homeChData, productChData };

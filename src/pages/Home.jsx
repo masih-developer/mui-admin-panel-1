@@ -17,17 +17,17 @@ import {
 } from "@mui/material";
 import Features from "../components/layout/home/Features";
 import Chart from "../components/common/Chart";
-import { HomeChData } from "../data/HomeChartData";
+import { homeChData } from "../data/ChartsData";
 import {
     ArrowUpward as ArrowUpwardIcon,
     ArrowDownward as ArrowDownwardIcon,
     RemoveRedEye as RemoveRedEyeIcon,
 } from "@mui/icons-material";
-import usersList from "../data/ListOfUsers";
+import { usersList } from "../data/ListOfUsers";
 
 const Home = () => {
     return (
-        <Box>
+        <Box pb={3}>
             <Box component="section">
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6} lg={4}>
@@ -68,7 +68,7 @@ const Home = () => {
                     borderRadius: "10px",
                 }}
             >
-                <Chart title="User Analytics" data={HomeChData} grid />
+                <Chart title="User Analytics" data={homeChData} grid />
             </Box>
             <Box component="section">
                 <Grid container spacing={3}>
@@ -81,9 +81,9 @@ const Home = () => {
                                 disablePadding
                                 sx={{ display: "flex", flexDirection: "column", gap: 1 }}
                             >
-                                {usersList.map((item, index) => (
+                                {usersList.map((item) => (
                                     <ListItem
-                                        key={index}
+                                        key={item.id}
                                         sx={{
                                             justifyContent: "space-between",
                                             alignItems: "center",
@@ -139,8 +139,8 @@ const Home = () => {
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
-                                        {usersList.map((cell, index) => (
-                                            <TableRow key={index}>
+                                        {usersList.map((cell) => (
+                                            <TableRow key={cell.id}>
                                                 <TableCell
                                                     sx={{ py: 3, px: 2, borderBottom: "none" }}
                                                 >

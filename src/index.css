@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+/* Set font family for the entire document */
 body {
     font-family: "Roboto", sans-serif;
 }
 
-/* Scrollbar */
+/* Scrollbar styles */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
+    /* Use light-gray for track */
     background-color: #e0e0e0;
 }
 
-/* Thumb */
 ::-webkit-scrollbar-thumb {
+    /* Use a darker shade of gray for scrollbar thumb */
     background-color: #929292;
     border-radius: 10px;
 }
 
-/* Handle Of Hover */
+/* Change thumb color on hover */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #686868;
 }

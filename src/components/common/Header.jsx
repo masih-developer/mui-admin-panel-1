@@ -50,7 +50,7 @@ const Header = (props) => {
                             <SettingsIcon />
                         </IconButton>
                     </Box>
-                    <Avatar src="./assets/images/person/01.jpg" />
+                    <Avatar src="/assets/images/person/01.jpg" />
                 </Box>
             </Toolbar>
         </AppBar>
